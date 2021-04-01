@@ -1,0 +1,58 @@
+public class lesson1 {
+    public static void main(String[] args) {
+        //task1
+        System.out.println("task1");
+        byte[] task1Arr = {2, 2, 2, 2, 2};
+
+        //task2
+        System.out.println("task2");
+        short[] task2Arr = new short[1000];
+        short x = 0;
+        while(x < 1000) {
+            task2Arr[x] = ++x;
+        }
+
+        //task3
+        System.out.println("task3");
+        int[] task3Arr = new int[20];
+        for(int i = 0, j = -19; i < task3Arr.length; i++, j += 2) {
+            task3Arr[i] = j;
+        }
+
+        //task4
+        System.out.println("task4");
+        int[] task4Arr = {8, 15, 36, 156, 5, 1365, 46, 45, 300};
+        for(int i = 0; i < task4Arr.length; i++) {
+            if(task4Arr[i] % 5 == 0) {
+                System.out.print(task4Arr[i] + " ");
+            }
+        }
+
+        //task5
+        System.out.println("\ntask5");
+        double[] task5Arr = {-36.5, 46.32, 12.5, 486.321, 211.84, 120, 1000.36, 10};
+        for(int i = 0; i < task5Arr.length; i++) {
+            if (task5Arr[i] >= 24.12 && task5Arr[i] <= 467.23) {
+                System.out.print(task5Arr[i] + " ");
+            }
+        }
+
+        //tak6
+        System.out.println("\ntask6");
+        int[] task6Arr = {10, 5, 321, 64, 8, 624, 511, 463, 456};
+        byte counter = 0;
+        for(int i = 0; i < task6Arr.length; i++) {
+            if (task6Arr[i] % 2 == 0) {
+                counter++;
+            }
+        }
+        System.out.printf("there are %d numbers that can be divided by 2\n", counter);
+
+        //task7
+        System.out.println("\ntask7");
+        int N = 5;
+        for(int i = 1; i < 11; i++) {
+            System.out.printf("%d x %d = %d\n", N, i, N * i);
+        }
+    }
+}
