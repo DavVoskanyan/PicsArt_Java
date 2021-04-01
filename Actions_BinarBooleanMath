@@ -1,0 +1,24 @@
+class Main{  
+  public static void main(String args[]){  
+    System.out.println("Math and Binary Actions");
+    int a = 5, b = 7;
+    System.out.println(a++ & --b); // 4
+    System.out.println(a | b); // 6
+    System.out.println(~a + 3); // -4
+    System.out.println(~b); // -7
+    System.out.println((a - 1) ^ (b + 4)); // 15
+    
+    System.out.println("\nActions with Boolean and if/else condition");
+    boolean x, y, z;
+    x = a >= b;
+    y = a < b;
+    z = a == b;
+    if (x) {
+      System.out.println("x = " + true); // won't work
+    } else {
+      System.out.println("x = " + false); //x = false
+    }
+    System.out.println(x && y && z); // false
+    System.out.println(x || y || z); // true
+  }  
+}  
